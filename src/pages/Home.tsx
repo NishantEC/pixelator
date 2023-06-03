@@ -26,7 +26,7 @@ const Home = () => {
                                 <label>Overlay Hue</label>
                                 <input className="custom-range" type="range" />
                             </div>
-                            <button onClick={() => setUploadImage(true)}>
+                            <button>
                                 <BsCloudDownload />
                                 Download Image
                             </button>
