@@ -88,7 +88,7 @@ const Home= () => {
 
   return (
     <div className="home-container">
-      <header>PIXELATOR</header>
+      <header>PIXELETOR</header>
       <div className="content-wrapper">
       {uploadedImage ? (
 
