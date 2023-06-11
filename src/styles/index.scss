@@ -34,6 +34,13 @@ body {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    .image{
+      max-width: 400px;
+      max-height: 400px;
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
 
   }
 }

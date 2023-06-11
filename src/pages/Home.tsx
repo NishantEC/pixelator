@@ -42,8 +42,8 @@ const Home= () => {
         const image = new Image();
         image.onload = () => {
           const pixelSize = canvas.width / pixelDensity;
-
-
+          canvas.width = image.width;
+          canvas.height = image.height;
 
           context.clearRect(0, 0, canvas.width, canvas.height);
           context.imageSmoothingEnabled = false;
@@ -95,10 +95,7 @@ const Home= () => {
            <div className="content">
             <canvas
               className="image"
-              style={{
-                width: "400px",
-                height: "auto",
-              }}
+
               ref={canvasRef}
             />
 
